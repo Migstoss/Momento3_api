@@ -12,11 +12,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var router = _express2.default.Router();
 
-router.get('/listSession', _ProjectController2.default.listSession);
-router.get('/getSession', _ProjectController2.default.getSession);
-router.post('/addSession', _ProjectController2.default.addSession);
-router.post('/deleteSession', _ProjectController2.default.deleteSession);
-router.post('/updateSession', _ProjectController2.default.updateSession);
+router.get('/listProperty', _ProjectController2.default.listProperty);
+router.post('/getProperty', _ProjectController2.default.getProperty);
+router.post('/getUser', _ProjectController2.default.getUser);
+router.post('/addProperty', _ProjectController2.default.addProperty);
+router.post('/addUser', _ProjectController2.default.addUser);
+router.delete('/deleteProperty', _ProjectController2.default.deleteProperty);
+router.put('/updateProperty', _ProjectController2.default.updateProperty);
 //router.get('/data', controller.data);
 
 module.exports = router;

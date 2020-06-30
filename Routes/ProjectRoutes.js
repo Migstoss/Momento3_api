@@ -3,11 +3,13 @@ import controller from '../Controllers/ProjectController'
 
 const router = express.Router();
 
-router.get('/listSession', controller.listSession);
-router.get('/getSession', controller.getSession);
-router.post('/addSession', controller.addSession);
-router.post('/deleteSession', controller.deleteSession);
-router.post('/updateSession', controller.updateSession);
+router.get('/listProperty', controller.listProperty);
+router.post('/getProperty', controller.getProperty);
+router.post('/getUser', controller.getUser);
+router.post('/addProperty', controller.addProperty);
+router.post('/addUser', controller.addUser);
+router.delete('/deleteProperty', controller.deleteProperty);
+router.put('/updateProperty', controller.updateProperty);
 //router.get('/data', controller.data);
 
 module.exports = router;
